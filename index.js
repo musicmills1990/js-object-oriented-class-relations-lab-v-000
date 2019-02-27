@@ -21,7 +21,8 @@ class Driver {
     return store.trips.filter(
       function(trips) {
         return trips.driverId === this.id;
-   });
+    }.bind(this)
+   );
   }
 }
 
@@ -44,7 +45,8 @@ class Passenger {
     return store.trips.filter(
       function(trip){
         return trip.passengerId === this.id;
-    });
+     }.bind(this)
+    );
   }
 }
 
