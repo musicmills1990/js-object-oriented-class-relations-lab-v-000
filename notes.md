@@ -1,0 +1,1 @@
+using bind(this) on the trips function makes sense because you need to use it to call it later for the other associated fucntions.
