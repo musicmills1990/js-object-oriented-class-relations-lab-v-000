@@ -62,17 +62,15 @@ class Trip {
   driver(){
     return store.drivers.find(
       function(driver) {
-        return driver.id === this.driverId
-    }bind(this);
-    );
+        return driver.id === this.driverId;
+    });
    }
   
   passenger(){
     return store.passengers.find(
       function(passenger) {
-        return passenger.id === this.passengerId
-    }.bind(this);
-    );
+        return passenger.id === this.passengerId;
+    });
   }
 }
 
